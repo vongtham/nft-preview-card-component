@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --softblue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --verydarkblueMain: hsl(217, 54%, 11%); /*main bg*/
+    --verydarkblueCard: hsl(216, 50%, 16%); /*card bg*/
+    --verydarkblueLine: hsl(215, 32%, 27%); /*line*/
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background: var(--verydarkblueMain);
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    margin: 0 10px;
+}
+
+img {
+    display: block;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.card {
+    background: var(--verydarkblueCard);
+    max-width: 300px;
+    border-radius: 20px;
+}
+
+.card-header {
+    position: relative;
+    position: relative;
+}
+
+.img-eb {
+    width: 100%;
+    border-radius: 10px;
+    
+}
+
+.layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.layer:hover {
+    background: var(--cyan);
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.icon-layer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover .icon-layer {
+    opacity: 1;
+}
+
+h1 {
+    color: var(--white);
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+p {
+    color: var(--softblue);
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+h5 {
+    color: var(--cyan);
+}
+
+.card-content {
+    padding-top: 25px;
+    border-bottom: 1px solid var(--verydarkblueLine);
+}
+
+.flex-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 0;
+}
+
+.img-space {
+    margin-right: 8px;
+}
+
+.creator {
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.image-cr {
+    width: 30px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+span {
+    color: var(--white);
+}
